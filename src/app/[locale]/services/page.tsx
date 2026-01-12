@@ -14,10 +14,7 @@ export default async function Services() {
   const t = await getTranslations()
   const scope = fork()
 
-  await allSettled(getServicesEv, {
-    scope,
-    params: "en",
-  })
+  await allSettled(getServicesEv, { scope })
 
   return (
     <EffectorNext values={serialize(scope)}>
