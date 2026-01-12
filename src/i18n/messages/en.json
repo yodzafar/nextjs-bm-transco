@@ -1,0 +1,179 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "drive": "Drive for BM",
+    "contactUs": "Contact us"
+  },
+  "action": {
+    "driveWithUs": "Drive with us",
+    "getQuote": "Get a Qoute",
+    "submit": "Submit",
+    "submitRequest": "Submit request"
+  },
+  "title": {
+    "whyDriveWithUs": "Why Drive with Us",
+    "about": "About the company",
+    "ourServices": "Our Services",
+    "partners": "Our Partners",
+    "faq": "Frequently asked questions <br></br> about BM Transco",
+    "teamDrivers": "Team Drivers Available for Freight"
+  },
+  "text": {
+    "driveWithUsDesc": "At BM Transco, we believe that our drivers are the backbone of everything we do. That’s why we’ve built a driver-first culture focused on respect, reliability, and real rewards. Here’s why professional drivers choose us:",
+    "aboutDesc": "BM Transco has been leading the trucking industry with reliable service, cutting-edge technology, and a driver-first mindset since 2020 Our mission is to deliver excellence while taking care of the people who make it happen — our drivers.",
+    "serviceDesc": "We offer a full range of freight transportation services to meet diverse logistics needs — from dedicated contracts to specialized freight. Each service is backed by industry expertise, operational excellence, and a focus on customer satisfaction.",
+    "partnerDesc": "Save time and money with deals from the nation’s top trucking and logistics providers",
+    "faqDesc": "Sharko gives you convenient features that you need to spend, received, & managing of your money efficiently. Get everything on your phone.",
+    "footerDesc": "Top-paying trucking jobs, unmatched benefits, and a culture that puts drivers first",
+    "socialMedia": "Social Media",
+    "footerCopyright": "Copyright © 2025 • BM Transco team",
+    "teamDrivers": "We have reliable team drivers ready to move your freight quickly and safely. Looking to build long-term relationships with brokers who value on-time, safe, and efficient service."
+  },
+  "choose": {
+    "feature": {
+      "1": {
+        "title": "Weekly Pay & Bonuses",
+        "desc": "We offer industry-leading pay packages that reward your hard work and dedication. With consistent miles and performance bonuses, you’ll take home more every week — guaranteed."
+      },
+      "2": {
+        "title": "Flexible schedules",
+        "desc": "Your time matters. Whether you prefer regional, OTR, or dedicated routes, we work with you to find a schedule that fits your lifestyle — not the other way around."
+      },
+      "3": {
+        "title": "24/7 Dispatch Support",
+        "desc": "Our 24/7 Dispatch Support service ensures that your operations run smoothly around the clock. Whether it’s day or night, our experienced dispatch team is always available to provide real-time assistance."
+      }
+    }
+  },
+  "about": {
+    "feature": {
+      "1": {
+        "title": "Leadership team",
+        "desc": "Our leadership is driven by a commitment to innovation, customer service, and employee development"
+      },
+      "2": {
+        "title": "Safety and Compliance Commitment",
+        "desc": "Our proactive safety program includes routine inspections, digital logging systems (ELD)"
+      }
+    },
+    "title": "At BM Transco, we are <br></br> more than just a <br></br> trucking  company",
+    "homeTitle": "About BM Transco",
+    "subtitle": "With years of experience on the road and a commitment to excellence, we specialize in safe, reliable, and efficient freight transportation across the United States.",
+    "desc": "Whether you are shipping regionally or coast-to-coast, we provide tailored logistics solutions to keep your business moving forward."
+  },
+  "faq": {
+    "feature": {
+      "1": {
+        "question": "What types of freight do you transport?",
+        "answer": "We handle a wide range of freight including dry goods, refrigerated items, heavy equipment, and specialized cargo. If you have specific shipping needs, contact us for customized solutions."
+      },
+      "2": {
+        "question": "Which areas do you serve?",
+        "answer": "We provide regional and nationwide trucking services across the United States. We also offer cross-border shipments to Canada and Mexico upon request."
+      },
+      "3": {
+        "question": "How can I track my shipment?",
+        "answer": "You can track your shipment in real-time through our online tracking system. We also offer regular status updates via email or SMS for added convenience."
+      },
+      "4": {
+        "question": "What are your rates and how are they calculated?",
+        "answer": "Our rates are based on factors such as distance, weight, type of cargo, and service level. For an accurate quote, please contact us with your shipment details."
+      }
+    }
+  },
+  "breadcrumb": {
+    "title": "Home / {title}"
+  },
+  "journey": {
+    "subtitle": "our journey",
+    "title": "How we had grown",
+    "desc": "Founded with a single truck and a strong work ethic, BM Transco has grown into a trusted transportation partner for businesses across various industries. From humble beginnings to a robust fleet and a dedicated team of professionals, our journey reflects hard work, smart planning, and a relentless pursuit of quality. Every mile we have driven has shaped who we are today — and we are just getting started."
+  },
+  "mission": {
+    "subtitle": "our mission",
+    "title": "Delivering reliable, safe, on-time transportation.",
+    "desc": "Our mission is to deliver consistent, high-quality freight services while prioritizing safety, integrity, and transparency. We aim to build long-term relationships with our clients by exceeding expectations and ensuring every load arrives on time — every time."
+  },
+  "vision": {
+    "subtitle": "our vision",
+    "title": "Leading innovation in American freight logistics.",
+    "desc": "We envision becoming a leading name in American trucking by setting new standards in operational excellence, sustainability, and customer satisfaction. At BM Transco, we strive to innovate and grow, while maintaining the personal touch that defines our service."
+  },
+  "service": {
+    "homeTitle": "BM Transco Services",
+    "title": "At BM Transco, we <br></br> provide reliable, and <br></br> efficient solutions",
+    "subtitle": "Whether you are moving goods locally or nationwide, we ensure that every shipment is handled with precision, care, and industry-leading professionalism.",
+    "desc": "At BM Transco, our services are built around efficiency, reliability, and safety. No matter the cargo or the destination, you can trust us to get it there on time and in perfect condition."
+  },
+  "contact": {
+    "homeTitle": "BM Transco Contact Us",
+    "title": "Have questions about <br></br> our trucks, services, or <br></br> want to request a quote?",
+    "desc": "We’re here to help. Whether you’re looking for fleet solutions, maintenance support, or just want to speak with someone on our team, we’re only a call or message away.",
+    "applyTitle": "Request information",
+    "applyDesc": "Fill our the form below, and our team will get you back to you with a customized quote for your logistics needs",
+    "information": "Contact information",
+    "connectWithUs": "Connect with us"
+  },
+  "label": {
+    "fullName": "Full name",
+    "companyName": "Company name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone number",
+    "message": "Message",
+    "phone": "Phone",
+    "email": "E-mail",
+    "hoursOfOperation": "Hours of operation",
+    "address": "Address",
+    "equipment": "Equipment",
+    "trailerType": "Trailer type",
+    "commodity": "Commodity",
+    "weight": "Weight",
+    "description": "Description",
+    "pickupZipCode": "Pick up Zip code",
+    "pickupDate": "Pick up date",
+    "deliveryZipCode": "Delivery zip code",
+    "deliveryDate": "Delivery date"
+  },
+  "form": {
+    "placeholder": {
+      "yourMessage": "Tell us about your logistics needs",
+      "enterFullName": "Enter your full name",
+      "enterEmail": "Enter your email",
+      "enterCompanyName": "Enter your company's name",
+      "enterEquipment": "Enter equipment",
+      "enterCommodity": "Enter comodity",
+      "enterWeight": "Enter weight",
+      "enterText": "Enter text",
+      "enterPickupDate": "Enter pick up date",
+      "enterDeliveryDate": "Enter delivery date",
+      "enterTrailerType": "Enter trailer type"
+    },
+    "checkbox": {
+      "agreeToTerms": "I agree to receive communication about services and promotions"
+    },
+    "error": {
+      "requiredField": "Required field",
+      "emailInvalid": "Email is invalid",
+      "invalidZipCode": "Invalid zip code",
+      "invalidDate": "Invalid date"
+    },
+    "message": {
+      "error": {
+        "messageFail": "Failed to send message.",
+        "quoteFailed": "Failed to create quote."
+      },
+      "success": {
+        "messageSuccess": "Message successfully sent",
+        "quoteCreated": "Request successfully sent"
+      }
+    }
+  },
+  "partner": {
+    "trusted": "Trusted <br></br> Partners"
+  },
+  "driver": {
+    "trusted": "Trusted <br></br> Drivers"
+  }
+}

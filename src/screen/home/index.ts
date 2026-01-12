@@ -1,0 +1,6 @@
+export * from "./HomeMain"
+export * from "./DriveWithUs"
+export * from "./HomeAbout"
+export * from "./HomeService"
+export * from "./HomeTeam"
+export * from "./FAQ"

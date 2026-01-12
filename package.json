@@ -1,0 +1,41 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@effector/next": "^0.7.1",
+    "@hookform/resolvers": "^5.2.1",
+    "@react-input/mask": "^2.0.4",
+    "axios": "^1.11.0",
+    "clsx": "^2.1.1",
+    "effector": "^23.4.2",
+    "effector-react": "^23.3.0",
+    "next": "15.3.3",
+    "next-intl": "^4.1.0",
+    "next-nprogress-bar": "^3.0.0",
+    "qs": "^6.14.0",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.62.0",
+    "zod": "^4.0.15"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "20.19.1",
+    "@types/qs": "^6.14.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

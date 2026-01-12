@@ -1,0 +1,177 @@
+{
+  "navigation": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "drive": "BMda haydang",
+    "contactUs": "Biz bilan aloqa"
+  },
+  "action": {
+    "driveWithUs": "Biz bilan ishlang",
+    "getQuote": "Tijorat taklifini olish",
+    "submit": "Yuborish",
+    "submitRequest": "So‘rov yuborish"
+  },
+  "title": {
+    "whyDriveWithUs": "Nega bizni tanlashadi",
+    "about": "Kompaniya haqida",
+    "ourServices": "Bizning xizmatlarimiz",
+    "partners": "<br></br> 100+ kompaniyadan takliflarni oling",
+    "faq": "BM Transco haqida <br></br> tez-tez so‘raladigan savollar"
+  },
+  "text": {
+    "driveWithUsDesc": "BM Transco’da biz haydovchilarimizni qilayotgan ishimizning asosi deb bilamiz. Shuning uchun biz hurmat, ishonchlilik va munosib mukofotga asoslangan haydovchi markazli madaniyatni yaratdik. Mana nega professional haydovchilar bizni tanlashadi:",
+    "aboutDesc": "BM Transco 2020-yildan beri yuk tashish sohasida yetakchilik qilib kelmoqda — ishonchli xizmat, zamonaviy texnologiya va haydovchi markazli yondashuv bilan. Bizning maqsadimiz — mukammallikni yetkazish va buning ortida turgan odamlar — haydovchilarimizga g‘amxo‘rlik qilish.",
+    "serviceDesc": "Biz turli logistika ehtiyojlari uchun keng ko‘lamli yuk tashish xizmatlarini taklif qilamiz — uzoq muddatli shartnomalardan tortib, maxsus yuk tashishgacha. Har bir xizmat sanoat tajribasi, operatsion mukammallik va mijozlar mamnunligiga e’tibor bilan ta’minlanadi.",
+    "partnerDesc": "Mamlakatdagi yetakchi yuk tashish va logistika kompaniyalaridan takliflar bilan vaqt va mablag‘ni tejang",
+    "faqDesc": "Sharko sizga pulingizni sarflash, qabul qilish va boshqarishni samarali amalga oshirish uchun kerakli qulay funksiyalarni taqdim etadi. Hammasi telefoningizda.",
+    "footerDesc": "Yuqori maoshli yuk tashish ishlari, mislsiz imtiyozlar va haydovchilarni birinchi o‘ringa qo‘yadigan madaniyat",
+    "socialMedia": "Ijtimoiy tarmoqlar",
+    "footerCopyright": "Mualliflik huquqi © 2025 • BM Transco jamoasi"
+  },
+  "choose": {
+    "feature": {
+      "1": {
+        "title": "Haftalik maosh va bonuslar",
+        "desc": "Biz sizning mehnatingiz va sadoqatingizni qadrlaydigan, sohadagi eng yuqori ish haqlarini taklif qilamiz. Barqaror masofa va natijaviy bonuslar bilan siz har hafta ko‘proq daromad olasiz — kafolatlangan."
+      },
+      "2": {
+        "title": "Moslashuvchan jadval",
+        "desc": "Vaqtingiz biz uchun muhim. Mintaqaviy, uzoq masofali yoki belgilangan marshrutlardan birini tanlashingizdan qat’i nazar, biz sizning turmush tarziga mos keladigan jadvalni taqdim etamiz — aksincha emas."
+      },
+      "3": {
+        "title": "24/7 Dispetcherlik qo‘llab-quvvatlovi",
+        "desc": "Bizning 24/7 dispetcherlik xizmatimiz sizning ishlaringizning sutkaning istalgan vaqtida uzluksiz ishlashini ta’minlaydi. Tajribali jamoamiz doimo real vaqt rejimida yordam berishga tayyor."
+      }
+    }
+  },
+  "about": {
+    "feature": {
+      "1": {
+        "title": "Rahbariyat jamoasi",
+        "desc": "Rahbariyatimiz innovatsiyalar, mijozlarga xizmat ko‘rsatish va xodimlarni rivojlantirishga sodiqdir"
+      },
+      "2": {
+        "title": "Xavfsizlik va talabga moslik majburiyati",
+        "desc": "Bizning faol xavfsizlik dasturimiz muntazam tekshiruvlar va raqamli hisob tizimlarini (ELD) o‘z ichiga oladi"
+      }
+    },
+    "title": "BM Transco’da biz <br></br> oddiygina <br></br> yuk tashish kompaniyasi emasmiz",
+    "homeTitle": "BM Transco haqida",
+    "subtitle": "Ko‘p yillik tajriba va mukammallikka sodiqlik bilan biz AQSh bo‘ylab xavfsiz, ishonchli va samarali yuk tashishga ixtisoslashganmiz.",
+    "desc": "Mintaqaviy yoki butun mamlakat bo‘ylab yuk tashishingizdan qat’i nazar, biz biznesingizni oldinga siljitish uchun moslashtirilgan logistika yechimlarini taqdim etamiz."
+  },
+  "faq": {
+    "feature": {
+      "1": {
+        "question": "Qaysi turdagi yuklarni tashiyapsiz?",
+        "answer": "Biz quruq mahsulotlar, tez buziluvchi mahsulotlar, og‘ir texnika va maxsus yuklarni tashiy olamiz. Agar sizning maxsus talablaringiz bo‘lsa, moslashtirilgan yechim uchun biz bilan bog‘laning."
+      },
+      "2": {
+        "question": "Qaysi hududlarda ishlaysiz?",
+        "answer": "Biz AQSh bo‘ylab mintaqaviy va milliy yuk tashish xizmatlarini ko‘rsatamiz. Shuningdek, so‘rov bo‘yicha Kanada va Meksikaga ham yetkazib beramiz."
+      },
+      "3": {
+        "question": "Yukimni qanday kuzataman?",
+        "answer": "Yukingizni real vaqt rejimida onlayn kuzatish tizimimiz orqali kuzatishingiz mumkin. Shuningdek, elektron pochta yoki SMS orqali muntazam yangilanishlarni taqdim etamiz."
+      },
+      "4": {
+        "question": "Narxlaringiz qanday belgilanadi?",
+        "answer": "Bizning narxlarimiz masofa, og‘irlik, yuk turi va xizmat darajasiga qarab belgilanadi. Aniq taklif olish uchun yuk tafsilotlari bilan biz bilan bog‘laning."
+      }
+    }
+  },
+  "breadcrumb": {
+    "title": "Bosh sahifa / {title}"
+  },
+  "journey": {
+    "subtitle": "bizning yo‘limiz",
+    "title": "Qanday rivojlandik",
+    "desc": "Bitta yuk mashinasi va kuchli mehnat etikasidan boshlangan BM Transco bugungi kunda turli sohalardagi bizneslar uchun ishonchli transport hamkoriga aylandi. Oddiy boshlanishdan kuchli avtopark va sodiq mutaxassislar jamoasigacha — bizning yo‘limiz mashaqqatli mehnat, to‘g‘ri rejalashtirish va sifatga intilish natijasidir. Har bir bosib o‘tilgan mil bizni shakllantirdi — va bu faqat boshlanishi."
+  },
+  "mission": {
+    "subtitle": "bizning vazifamiz",
+    "title": "Ishonchli, xavfsiz va o‘z vaqtida yetkazib berish.",
+    "desc": "Bizning vazifamiz — xavfsizlik, halollik va shaffoflikni ustuvor qilib, barqaror va yuqori sifatli yuk tashish xizmatlarini taqdim etish. Mijozlarimiz bilan uzoq muddatli hamkorlikni o‘rnatish uchun ularning kutganidan yuqori natijaga erishamiz."
+  },
+  "vision": {
+    "subtitle": "bizning qarashimiz",
+    "title": "Amerika logistikasi sohasida innovatsiyalar yetakchisi bo‘lish.",
+    "desc": "Biz operatsion mukammallik, barqaror rivojlanish va mijozlar mamnuniyatida yangi standartlarni o‘rnatib, Amerika yuk tashish sohasida yetakchi nomga aylanishni maqsad qilganmiz."
+  },
+  "service": {
+    "homeTitle": "BM Transco xizmatlari",
+    "title": "BM Transco’da biz <br></br> ishonchli va <br></br> samarali yechimlarni taqdim etamiz",
+    "subtitle": "Mahalliy yoki milliy miqyosda yuk tashiyapsizmi — biz har bir yetkazib berishni aniqlik, ehtiyotkorlik va professional yondashuv bilan amalga oshiramiz.",
+    "desc": "Xizmatlarimiz samaradorlik, ishonchlilik va xavfsizlik tamoyillariga asoslangan. Yuk turi va manzilidan qat’i nazar, uni o‘z vaqtida va mukammal holatda yetkazib beramiz."
+  },
+  "contact": {
+    "homeTitle": "BM Transco bilan bog‘laning",
+    "title": "Yuk mashinalarimiz, xizmatlarimiz haqida <br></br> savolingiz bormi yoki <br></br> tijorat taklifi so‘ramoqchimisiz?",
+    "desc": "Biz yordam berishga tayyormiz. Avtopark yechimlari, texnik qo‘llab-quvvatlash yoki shunchaki maslahat kerak bo‘lsa, biz doimo aloqadamiz.",
+    "applyTitle": "Ma’lumot so‘rash",
+    "applyDesc": "Quyidagi shaklni to‘ldiring, va jamoamiz sizning logistika ehtiyojlaringiz uchun moslashtirilgan taklif bilan bog‘lanadi",
+    "information": "Aloqa ma’lumotlari",
+    "connectWithUs": "Biz bilan bog‘laning"
+  },
+  "label": {
+    "fullName": "To‘liq ism",
+    "companyName": "Kompaniya nomi",
+    "emailAddress": "Elektron pochta",
+    "phoneNumber": "Telefon raqam",
+    "message": "Xabar",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "hoursOfOperation": "Ish vaqti",
+    "address": "Manzil",
+    "equipment": "Jihoz",
+    "trailerType": "Tirkama turi",
+    "commodity": "Yuk turi",
+    "weight": "Og‘irlik",
+    "description": "Tavsif",
+    "pickupZipCode": "Yuklash pochta kodi",
+    "pickupDate": "Yuklash sanasi",
+    "deliveryZipCode": "Yetkazish pochta kodi",
+    "deliveryDate": "Yetkazish sanasi"
+  },
+  "form": {
+    "placeholder": {
+      "yourMessage": "Logistika ehtiyojlaringiz haqida aytib bering",
+      "enterFullName": "To‘liq ismingizni kiriting",
+      "enterEmail": "Email kiriting",
+      "enterCompanyName": "Kompaniya nomini kiriting",
+      "enterEquipment": "Jihoz kiriting",
+      "enterCommodity": "Yuk turini kiriting",
+      "enterWeight": "Og‘irlikni kiriting",
+      "enterText": "Matn kiriting",
+      "enterPickupDate": "Yuklash sanasini kiriting",
+      "enterDeliveryDate": "Yetkazish sanasini kiriting",
+      "enterTrailerType": "Tirkama turini kiriting"
+    },
+    "checkbox": {
+      "agreeToTerms": "Men xizmatlar va aksiyalar haqida xabar olishga roziman"
+    },
+    "error": {
+      "requiredField": "Majburiy maydon",
+      "emailInvalid": "Email noto‘g‘ri",
+      "invalidZipCode": "Pochta kodi noto‘g‘ri",
+      "invalidDate": "Sana noto‘g‘ri"
+    },
+    "message": {
+      "error": {
+        "messageFail": "Xabar yuborilmadi.",
+        "quoteFailed": "So‘rov yaratil failed."
+      },
+      "success": {
+        "messageSuccess": "Xabar muvaffaqiyatli yuborildi",
+        "quoteCreated": "So‘rov muvaffaqiyatli yuborildi"
+      }
+    }
+  },
+  "partner": {
+    "trusted": "Ishonchli <br></br> Hamkorlar"
+  },
+  "driver": {
+    "trusted": "Ishonchli <br></br> Haydovchilar"
+  }
+}
