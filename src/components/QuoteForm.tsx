@@ -1,40 +1,40 @@
-"use client"
-import { useTranslations } from "next-intl"
-import { MaskedField } from "./ui/MaskedField"
-import { PrimaryButton } from "./ui/PrimaryButton"
-import { TextField } from "./ui/TextField"
-import { Controller, useForm } from "react-hook-form"
-import z from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useCallback } from "react"
-import { useUnit } from "effector-react"
-import { createQuoteRequestFx } from "@/models/quote"
-import { useToast } from "./toast/useToast"
-import { Toasts } from "./toast/Toast"
+"use client";
+import { useTranslations } from "next-intl";
+import { MaskedField } from "./ui/MaskedField";
+import { PrimaryButton } from "./ui/PrimaryButton";
+import { TextField } from "./ui/TextField";
+import { Controller, useForm } from "react-hook-form";
+import z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useCallback } from "react";
+import { useUnit } from "effector-react";
+import { createQuoteRequestFx } from "@/models/quote";
+import { useToast } from "./toast/useToast";
+import { Toasts } from "./toast/Toast";
 
 type FormValues = {
-  fullName: string
-  email: string
-  phone: string
-  company?: string
-  equipment: string
-  trailerType: string
-  commodity: string
-  weight: string
-  description: string
-  pickupZipCode: string
-  pickupDate: string
-  deliveryZipCode: string
-  deliveryDate: string
-}
+  fullName: string;
+  email: string;
+  phone: string;
+  company?: string;
+  equipment: string;
+  trailerType: string;
+  commodity: string;
+  weight: string;
+  description: string;
+  pickupZipCode: string;
+  pickupDate: string;
+  deliveryZipCode: string;
+  deliveryDate: string;
+};
 
 export const QuoteForm = () => {
-  const { toasts, success, error, dismiss } = useToast()
-  const t = useTranslations()
+  const { toasts, success, error, dismiss } = useToast();
+  const t = useTranslations();
   const { createQuote, loading } = useUnit({
     createQuote: createQuoteRequestFx,
     loading: createQuoteRequestFx.pending,
-  })
+  });
 
   const schema = z.object({
     fullName: z.string().min(2, t("form.error.requiredField")),
@@ -58,7 +58,7 @@ export const QuoteForm = () => {
         (val) => val.match(/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/),
         {
           message: t("form.error.invalidDate"),
-        }
+        },
       ),
     deliveryZipCode: z
       .string()
@@ -71,13 +71,13 @@ export const QuoteForm = () => {
       .min(1, t("form.error.requiredField"))
       .refine(
         (val) => {
-          return val.match(/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/)
+          return val.match(/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/);
         },
         {
           message: t("form.error.invalidDate"),
-        }
+        },
       ),
-  })
+  });
 
   const { control, handleSubmit, setValue } = useForm<FormValues>({
     defaultValues: {
@@ -96,23 +96,27 @@ export const QuoteForm = () => {
       deliveryDate: "",
     },
     resolver: zodResolver(schema),
-  })
+  });
 
   const onSubmit = useCallback(
     async (data: FormValues) => {
       try {
         await createQuote({
           ...data,
-          pickupDate: new Date(data.pickupDate),
-          deliveryDate: new Date(data.deliveryDate),
-        })
-        success(t("form.message.success.quoteCreated"))
+          full_name: data.fullName,
+          pickup_zip_code: data.pickupZipCode,
+          dropoff_zip_code: data.deliveryZipCode,
+          trailer_type: data.trailerType,
+          pickup_date: data.pickupDate,
+          dropoff_date: data.deliveryDate,
+        });
+        success(t("form.message.success.quoteCreated"));
       } catch (_e) {
-        error(t("form.message.error.quoteFailed"))
+        error(t("form.message.error.quoteFailed"));
       }
     },
-    [createQuote, error, success, t]
-  )
+    [createQuote, error, success, t],
+  );
 
   return (
     <>
@@ -339,15 +343,11 @@ export const QuoteForm = () => {
           />
         </div>
         <div className="col-span-12 flex lg:justify-start justify-center">
-          <PrimaryButton
-            type="submit"
-            className="min-w-[200px]"
-            disabled={loading}
-          >
+          <PrimaryButton type="submit" className="min-w-50" disabled={loading}>
             {t("action.submitRequest")}
           </PrimaryButton>
         </div>
       </form>
     </>
-  )
-}
+  );
+};

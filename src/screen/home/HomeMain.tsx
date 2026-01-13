@@ -48,7 +48,7 @@ export const HomeMain = () => {
       </Modal>
       <div className="relative">
         <div className="relative home-height text-white">
-          <div className="absolute left-0 top-0 right-0 bottom-0 bg-black/65 z-[2]" />
+          <div className="absolute left-0 top-0 right-0 bottom-0 bg-black/65 z-2" />
           <video
             autoPlay
             muted
@@ -62,14 +62,14 @@ export const HomeMain = () => {
 
         <div className="px-4 sm:bg-transparent bg-secondary md:absolute left-0 right-0 top-0 bottom-0 z-2 md:text-white">
           <div className="container flex flex-col mx-auto md:pt-8 pt-6 h-full relative z-3">
-            <div className="flex lg:flex-grow md:mt-[14%] lg:mt-0 flex-col justify-center">
+            <div className="flex lg:grow md:mt-[14%] lg:mt-0 flex-col justify-center">
               {mounted ? (
                 <h1 className="sm:mb-8 mb-4 whitespace-pre-line">
                   {siteSettings?.homepage_title}
                 </h1>
               ) : null}
               {mounted ? (
-                <p className="text-xl md:max-w-[530px] leading-8 lg:mb-0 md:mb-12 mb-6">
+                <p className="text-xl md:max-w-132.5 leading-8 lg:mb-0 md:mb-12 mb-6">
                   {siteSettings?.homepage_description}
                 </p>
               ) : null}
@@ -90,7 +90,7 @@ export const HomeMain = () => {
               </div>
               <div className="h-8 w-px sm:bg-white/30 bg-[#A0A0A0]" />
               <div className="flex items-center gap-4">
-                <span className="font-lexend-exa inline-block min-w-[80px] text-2xl sm:text-[42px] sm:leading-[52px] font-bold">
+                <span className="font-lexend-exa inline-block min-w-20 text-2xl sm:text-[42px] sm:leading-13 font-bold">
                   <CountUp
                     startVal={1}
                     delay={0.3}

@@ -1,42 +1,42 @@
-"use client"
-import clsx from "clsx"
-import { ContactInfoCard } from "./ContactInfoCard"
-import { CheckboxField } from "./ui/CheckboxField"
-import { PrimaryButton } from "./ui/PrimaryButton"
-import { TextField } from "./ui/TextField"
-import { useTranslations } from "next-intl"
-import { Controller, useForm } from "react-hook-form"
-import { useCallback } from "react"
-import z from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useUnit } from "effector-react"
-import { createContactFormFx } from "@/models/contact"
-import { Toasts } from "./toast/Toast"
-import { useToast } from "./toast/useToast"
-import { MaskedField } from "./ui/MaskedField"
+"use client";
+import clsx from "clsx";
+import { ContactInfoCard } from "./ContactInfoCard";
+import { CheckboxField } from "./ui/CheckboxField";
+import { PrimaryButton } from "./ui/PrimaryButton";
+import { TextField } from "./ui/TextField";
+import { useTranslations } from "next-intl";
+import { Controller, useForm } from "react-hook-form";
+import { useCallback } from "react";
+import z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useUnit } from "effector-react";
+import { createContactFormFx } from "@/models/contact";
+import { Toasts } from "./toast/Toast";
+import { useToast } from "./toast/useToast";
+import { MaskedField } from "./ui/MaskedField";
 
 type Props = {
-  title: string
-  desc: string
-  isModal?: boolean
-}
+  title: string;
+  desc: string;
+  isModal?: boolean;
+};
 
 type FormValues = {
-  fullName: string
-  companyName: string
-  email: string
-  phone: string
-  message: string
-  agreeToTerms: boolean
-}
+  fullName: string;
+  companyName: string;
+  email: string;
+  phone: string;
+  message: string;
+  agreeToTerms: boolean;
+};
 
 export const ApplyForm = ({ title, desc, isModal }: Props) => {
-  const { toasts, success, error, dismiss } = useToast()
-  const t = useTranslations()
+  const { toasts, success, error, dismiss } = useToast();
+  const t = useTranslations();
   const { sendContactForm, loading } = useUnit({
     sendContactForm: createContactFormFx,
     loading: createContactFormFx.pending,
-  })
+  });
 
   const schema = z.object({
     fullName: z.string().min(1, t("form.error.requiredField")),
@@ -49,7 +49,7 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
     agreeToTerms: z.boolean().refine((val) => val === true, {
       message: t("form.error.requiredField"),
     }),
-  })
+  });
 
   const { handleSubmit, control, setValue } = useForm<FormValues>({
     defaultValues: {
@@ -61,25 +61,25 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
       agreeToTerms: false,
     },
     resolver: zodResolver(schema),
-  })
+  });
 
   const onSubmit = useCallback(
     async (data: FormValues) => {
       try {
         await sendContactForm({
-          fullName: data.fullName,
+          full_name: data.fullName,
           company: data.companyName,
           email: data.email,
           phone: data.phone,
           message: data.message,
-        })
-        success(t("form.message.success.messageSuccess"))
+        });
+        success(t("form.message.success.messageSuccess"));
       } catch (_e) {
-        error(t("form.message.error.messageFail"))
+        error(t("form.message.error.messageFail"));
       }
     },
-    [error, sendContactForm, success, t]
-  )
+    [error, sendContactForm, success, t],
+  );
 
   return (
     <>
@@ -193,7 +193,7 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
             <div className="col-span-2 flex lg:justify-start justify-center">
               <PrimaryButton
                 type="submit"
-                className="min-w-[200px]"
+                className="min-w-50"
                 disabled={loading}
               >
                 {t("action.submit")}
@@ -204,12 +204,12 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
         <div
           className={clsx(
             "lg:w-1/2 w-full",
-            isModal ? "lg:block hidden" : "block"
+            isModal ? "lg:block hidden" : "block",
           )}
         >
           <ContactInfoCard />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
