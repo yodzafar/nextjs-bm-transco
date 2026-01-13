@@ -1,26 +1,26 @@
-"use client"
-import { ApplyForm } from "@/components/ApplyForm"
-import { ArrowRight } from "@/components/icons/ArrowRight"
-import { QuoteForm } from "@/components/QuoteForm"
-import { Modal } from "@/components/ui/Modal"
-import { PrimaryButton } from "@/components/ui/PrimaryButton"
-import { SecondaryButton } from "@/components/ui/SecondaryButton"
-import { $siteSettings } from "@/models/settings"
-import { useUnit } from "effector-react"
-import { useTranslations } from "next-intl"
-import { useEffect, useState } from "react"
-import CountUp from "react-countup"
+"use client";
+import { ApplyForm } from "@/components/ApplyForm";
+import { ArrowRight } from "@/components/icons/ArrowRight";
+import { QuoteForm } from "@/components/QuoteForm";
+import { Modal } from "@/components/ui/Modal";
+import { PrimaryButton } from "@/components/ui/PrimaryButton";
+import { SecondaryButton } from "@/components/ui/SecondaryButton";
+import { $siteSettings } from "@/models/settings";
+import { useUnit } from "effector-react";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+import CountUp from "react-countup";
 
 export const HomeMain = () => {
-  const [isOpenQuote, setIsOpenQuoute] = useState(false)
-  const [isOpenRequest, setIsOpenRequest] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const t = useTranslations()
-  const [siteSettings] = useUnit([$siteSettings])
+  const [isOpenQuote, setIsOpenQuoute] = useState(false);
+  const [isOpenRequest, setIsOpenRequest] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const t = useTranslations();
+  const [siteSettings] = useUnit([$siteSettings]);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   return (
     <>
@@ -60,9 +60,9 @@ export const HomeMain = () => {
           </video>
         </div>
 
-        <div className="px-4 sm:bg-transparent bg-secondary md:absolute left-0 right-0 top-0 bottom-0 z-[2] md:text-white">
-          <div className="container flex flex-col mx-auto md:pt-8 pt-6 h-full relative z-[3]">
-            <div className="flex lg:flex-grow-1 md:mt-[14%] lg:mt-0 flex-col justify-center">
+        <div className="px-4 sm:bg-transparent bg-secondary md:absolute left-0 right-0 top-0 bottom-0 z-2 md:text-white">
+          <div className="container flex flex-col mx-auto md:pt-8 pt-6 h-full relative z-3">
+            <div className="flex lg:flex-grow md:mt-[14%] lg:mt-0 flex-col justify-center">
               {mounted ? (
                 <h1 className="sm:mb-8 mb-4 whitespace-pre-line">
                   {siteSettings?.homepage_title}
@@ -76,11 +76,11 @@ export const HomeMain = () => {
             </div>
             <div className="lg:mt-auto flex items-center lg:gap-8 gap-4 lg:mb-10 md:mb-[25%] mb-6">
               <div className="flex items-center gap-4">
-                <span className="font-lexend-exa inline-block min-w-[80px] text-2xl sm:text-[42px] sm:leading-[52px] font-bold">
+                <span className="font-lexend-exa inline-block min-w-20 text-2xl sm:text-[42px] sm:leading-13 font-bold">
                   <CountUp
                     startVal={1}
                     delay={0.3}
-                    end={siteSettings?.driver_count || 0}
+                    end={siteSettings?.partner_count || 0}
                     suffix="+"
                   />
                 </span>
@@ -88,13 +88,13 @@ export const HomeMain = () => {
                   {t.rich("partner.trusted", { br: () => <br /> })}
                 </p>
               </div>
-              <div className="h-8 w-[1px] sm:bg-white/30 bg-[#A0A0A0]" />
+              <div className="h-8 w-px sm:bg-white/30 bg-[#A0A0A0]" />
               <div className="flex items-center gap-4">
                 <span className="font-lexend-exa inline-block min-w-[80px] text-2xl sm:text-[42px] sm:leading-[52px] font-bold">
                   <CountUp
                     startVal={1}
                     delay={0.3}
-                    end={siteSettings?.partner_count || 0}
+                    end={siteSettings?.driver_count || 0}
                     suffix="+"
                   />
                 </span>
@@ -122,5 +122,5 @@ export const HomeMain = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
