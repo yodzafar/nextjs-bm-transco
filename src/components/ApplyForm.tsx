@@ -51,7 +51,7 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
     }),
   });
 
-  const { handleSubmit, control, setValue } = useForm<FormValues>({
+  const { handleSubmit, control, setValue, reset } = useForm<FormValues>({
     defaultValues: {
       fullName: "",
       companyName: "",
@@ -74,6 +74,7 @@ export const ApplyForm = ({ title, desc, isModal }: Props) => {
           message: data.message,
         });
         success(t("form.message.success.messageSuccess"));
+        reset();
       } catch (_e) {
         error(t("form.message.error.messageFail"));
       }

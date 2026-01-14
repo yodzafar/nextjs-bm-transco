@@ -79,7 +79,7 @@ export const QuoteForm = () => {
       ),
   });
 
-  const { control, handleSubmit, setValue } = useForm<FormValues>({
+  const { control, handleSubmit, setValue, reset } = useForm<FormValues>({
     defaultValues: {
       fullName: "",
       email: "",
@@ -111,6 +111,7 @@ export const QuoteForm = () => {
           dropoff_date: data.deliveryDate,
         });
         success(t("form.message.success.quoteCreated"));
+        reset();
       } catch (_e) {
         error(t("form.message.error.quoteFailed"));
       }
